@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MvvmStudy"
         android:usesCleartextTraffic="true">
         <activity android:name=".ui.activity.login.LoginActivity"></activity>
-        <activity android:name=".BigImageActivity" />
+        <activity android:name=".ui.activity.bigimage.BigImageActivity" />
         <activity android:name=".ui.activity.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

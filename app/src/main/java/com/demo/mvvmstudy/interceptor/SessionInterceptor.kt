@@ -1,8 +1,7 @@
 package com.demo.mvvmstudy.interceptor
 
 import com.blankj.utilcode.util.SPUtils
-import com.demo.mvvmstudy.Constant
-import com.demo.mvvmstudy.interceptor.LiveEventBusKey
+import com.demo.mvvmstudy.api.Constant
 import com.jeremyliao.liveeventbus.LiveEventBus
 import com.library.common.http.interceptor.IReturnCodeErrorInterceptor
 

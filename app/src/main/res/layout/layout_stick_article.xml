@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.demo.mvvmstudy.MeiZiData" />
+            type="com.demo.mvvmstudy.bean.MeiZiData" />
     </data>
 
     <RelativeLayout
@@ -15,7 +15,7 @@
         android:padding="7dp">
 
         <ImageView
-            android:id="@+id/iv_text"
+            android:id="@+id/iv_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop" />

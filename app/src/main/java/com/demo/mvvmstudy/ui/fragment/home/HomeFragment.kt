@@ -1,8 +1,8 @@
 package com.demo.mvvmstudy.ui.fragment.home
 
 import android.view.View
-import com.demo.mvvmstudy.BigImageActivity
-import com.demo.mvvmstudy.MeiZiData
+import com.demo.mvvmstudy.ui.activity.bigimage.BigImageActivity
+import com.demo.mvvmstudy.bean.MeiZiData
 import com.demo.mvvmstudy.R
 import com.demo.mvvmstudy.databinding.FragmentHomeBinding
 import com.library.common.base.BaseListFragment

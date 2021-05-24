@@ -5,11 +5,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.MultiTransformation
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.bumptech.glide.request.RequestOptions
-import com.demo.mvvmstudy.MeiZiData
+import com.demo.mvvmstudy.bean.MeiZiData
 import com.demo.mvvmstudy.R
 import com.demo.mvvmstudy.databinding.LayoutStickArticleBinding
 import com.library.common.base.BaseAdapter
+import com.library.common.utils.GlideUtils
 import com.library.common.view.baseviewholder.CommonViewHolder
 import java.util.ArrayList
 
@@ -26,10 +26,7 @@ class MeiZiAdapter : BaseAdapter<MeiZiData>(R.layout.layout_stick_article, Array
     override fun convert(helper: CommonViewHolder, item: MeiZiData) {
         val itemListBinding = helper.getBinding<LayoutStickArticleBinding>()
         if (itemListBinding != null) {
-//            itemListBinding.item = item
-            Glide.with(context).load(item.url) //图片地址
-                .transform(MultiTransformation(CenterCrop(), RoundedCorners(20)))
-                .into(itemListBinding.ivText)
+            GlideUtils.loadCustomRoundImage(imageView = itemListBinding.ivImage, url = item.url)
         }
     }
 }

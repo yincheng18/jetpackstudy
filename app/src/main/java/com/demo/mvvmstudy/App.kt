@@ -1,6 +1,7 @@
 package com.demo.mvvmstudy
 
 import android.content.Context
+import com.demo.mvvmstudy.api.Constant
 import com.library.common.base.BaseApplication
 import com.library.common.config.AppConfig
 import com.library.common.http.ApiClient

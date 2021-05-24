@@ -100,11 +100,11 @@ abstract class BaseActivity<VM : BaseViewModel<*>, DB : ViewDataBinding> : AppCo
         return VaryViewHelperController(getReplaceView())
     }
 
-    protected open fun initImmersionBar() {
+    protected open fun initImmersionBar(color:Int=R.color.colorPrimary) {
         immersionBar {
 //            autoStatusBarDarkModeEnable(true)
             fitsSystemWindows(true)
-            statusBarColor(R.color.colorPrimary)
+            statusBarColor(color)
             statusBarDarkFont(false)
         }
     }

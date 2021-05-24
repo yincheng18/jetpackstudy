@@ -1,8 +1,6 @@
 package com.demo.mvvmstudy.api
 
-import com.demo.mvvmstudy.MeiZi
-import com.demo.mvvmstudy.MeiZiData
-import com.library.common.mvvm.IRes
+import com.demo.mvvmstudy.bean.MeiZiData
 import retrofit2.http.GET
 import retrofit2.http.Path
 

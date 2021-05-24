@@ -19,8 +19,13 @@ class GlideUtils {
 
     companion object {
 
-        private val options = RequestOptions()
+        private val optionsCenterCrop = RequestOptions()
             .centerCrop()
+            .placeholder(AppConfig.getPlaceholder())
+            .error(AppConfig.getErrorImage())
+            .skipMemoryCache(AppConfig.isSkipMemoryCache())
+
+         val optionsNormal= RequestOptions()
             .placeholder(AppConfig.getPlaceholder())
             .error(AppConfig.getErrorImage())
             .skipMemoryCache(AppConfig.isSkipMemoryCache())
@@ -28,28 +33,28 @@ class GlideUtils {
         /**
          * 加载图片(String地址)
          */
-        fun loadImage(imageView: ImageView, url: String?) {
+        fun loadImage(imageView: ImageView, url: String?,options:RequestOptions=optionsCenterCrop) {
             Glide.with(imageView.context).load(url).apply(options).into(imageView)
         }
 
         /**
          * 加载图片(int资源地址)
          */
-        fun loadImage(imageView: ImageView, res: Int) {
+        fun loadImage(imageView: ImageView, res: Int,options:RequestOptions=optionsCenterCrop) {
             Glide.with(imageView.context).load(res).apply(options).into(imageView)
         }
 
         /**
          * 加载图片(uri)
          */
-        fun loadImage(imageView: ImageView, uri: Uri) {
+        fun loadImage(imageView: ImageView, uri: Uri,options:RequestOptions=optionsCenterCrop) {
             Glide.with(imageView.context).load(uri).apply(options).into(imageView)
         }
 
         /**
          * 加载图片(bitmap)
          */
-        fun loadImage(imageView: ImageView, bitmap: Bitmap) {
+        fun loadImage(imageView: ImageView, bitmap: Bitmap,options:RequestOptions=optionsCenterCrop) {
             Glide.with(imageView.context).load(bitmap).apply(options).into(imageView)
         }
 
@@ -128,8 +133,8 @@ class GlideUtils {
         fun loadCustomRoundImage(
             imageView: ImageView,
             url: String,
-            type: RoundedCornersTransformation.CornerType,
-            radius: Int
+            type: RoundedCornersTransformation.CornerType= RoundedCornersTransformation.CornerType.ALL,
+            radius: Int=15
         ) {
             val options = RequestOptions()
                 .circleCrop()
