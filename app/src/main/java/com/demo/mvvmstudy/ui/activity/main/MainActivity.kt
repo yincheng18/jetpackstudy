@@ -19,8 +19,6 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
 
     private var systemTime: Long = 0
 
-    private var textList = ArrayList<TextView>()
-
     override fun onBackPressed() {
         val currentTimeMillis = System.currentTimeMillis()
         if (currentTimeMillis - systemTime > 2000) {
@@ -36,32 +34,30 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
 
     override fun init(savedInstanceState: Bundle?) {
         initViewPager()
-        mBinding.tvThree.clickDelay {
-            mBinding.viewPager.setCurrentItem(2, false)
-            textSelect(mBinding.tvThree)
-        }
-        mBinding.tvOne.clickDelay {
-            mBinding.viewPager.setCurrentItem(0, false)
-            textSelect(mBinding.tvOne)
-        }
-        mBinding.tvTwo.clickDelay {
-            mBinding.viewPager.setCurrentItem(1, false)
-            textSelect(mBinding.tvTwo)
-        }
+        initView()
     }
 
-    private fun textSelect(text: TextView) {
-        for (textView in textList) {
-            textView.isSelected = text == textView
+    private fun initView() {
+        mBinding.run {
+            rgMain.setOnCheckedChangeListener { _, checkedId ->
+                when (checkedId) {
+                    R.id.rb_home -> {
+                        viewPager.setCurrentItem(0,false)
+                    }
+                    R.id.rb_sort -> {
+                        viewPager.setCurrentItem(1,false)
+                    }
+                    R.id.rb_mine -> {
+                        viewPager.setCurrentItem(2,false)
+                    }
+                }
+            }
+            mBinding.rbHome.isChecked=true
         }
     }
 
     private fun initViewPager() {
-        textList.run {
-            add(mBinding.tvOne)
-            add(mBinding.tvTwo)
-            add(mBinding.tvThree)
-        }
+
         val list = ArrayList<Fragment>()
         list.run {
             add(HomeFragment())
@@ -71,7 +67,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
         mBinding.viewPager.offscreenPageLimit = list.size - 1
         mBinding.viewPager.isUserInputEnabled = false
         mBinding.viewPager.adapter = MyFragmentStateAdapter(this, list)
-        textSelect(mBinding.tvOne)
+
     }
 
     class MyFragmentStateAdapter(

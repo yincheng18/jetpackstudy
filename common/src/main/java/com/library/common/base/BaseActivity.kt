@@ -102,9 +102,10 @@ abstract class BaseActivity<VM : BaseViewModel<*>, DB : ViewDataBinding> : AppCo
 
     protected open fun initImmersionBar() {
         immersionBar {
-            autoStatusBarDarkModeEnable(true)
+//            autoStatusBarDarkModeEnable(true)
             fitsSystemWindows(true)
             statusBarColor(R.color.colorPrimary)
+            statusBarDarkFont(false)
         }
     }
 

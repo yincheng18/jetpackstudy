@@ -1,6 +1,7 @@
 package com.demo.mvvmstudy.ui.fragment.home
 
 import android.view.View
+import com.demo.mvvmstudy.BigImageActivity
 import com.demo.mvvmstudy.MeiZiData
 import com.demo.mvvmstudy.R
 import com.demo.mvvmstudy.databinding.FragmentHomeBinding
@@ -23,7 +24,7 @@ class HomeFragment : BaseListFragment<HomeViewModel, FragmentHomeBinding,
             startActivity(
                 android.content.Intent(
                     mContext,
-                    com.demo.mvvmstudy.BigImageActivity::class.java
+                    BigImageActivity::class.java
                 ).putExtra("item", mAdapter.getItem(position))
             )
         }

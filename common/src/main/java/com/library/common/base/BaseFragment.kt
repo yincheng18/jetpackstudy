@@ -338,7 +338,7 @@ abstract class BaseFragment<VM : BaseViewModel<*>, DB : ViewDataBinding> : Fragm
      */
     override fun initImmersionBar() {
         immersionBar {
-            autoStatusBarDarkModeEnable(true)
+//            autoStatusBarDarkModeEnable(true)
             statusBarColor(R.color.colorPrimary)
             fitsSystemWindows(true)
         }

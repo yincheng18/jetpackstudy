@@ -116,7 +116,6 @@ abstract class BaseListFragment<VM : BaseListViewModel<*>, DB : ViewDataBinding,
                 mSmartRefreshLayout?.isEnabled = false
             }
         }
-
     }
     /**
      * 设置刷新加载相关
