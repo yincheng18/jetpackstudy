@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:clickable="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_empty"
+        app:layout_constraintBottom_toTopOf="@+id/tv_msg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/no_data"
+        android:textColor="@color/m888888"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_empty" />
+
+
+    <Button
+        android:id="@+id/btn_reload"
+        android:layout_width="@dimen/dp136"
+        android:layout_height="@dimen/dp36"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp40"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/shape_status"
+        android:text="@string/refresh"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

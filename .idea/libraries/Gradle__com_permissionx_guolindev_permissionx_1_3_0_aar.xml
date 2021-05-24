@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.permissionx.guolindev:permissionx:1.3.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/b27bf2d1a62cd7f33f028e0fd6540f5b/jetified-permissionx-1.3.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/b27bf2d1a62cd7f33f028e0fd6540f5b/jetified-permissionx-1.3.0/res" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/b27bf2d1a62cd7f33f028e0fd6540f5b/jetified-permissionx-1.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/com.permissionx.guolindev/permissionx/1.3.0/8a71fa24ad5e8ec31e067c7e29bb96f2d63f4172/permissionx-1.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/com.permissionx.guolindev/permissionx/1.3.0/12229685a9ff8068504d42dbb3398ad17d9d8318/permissionx-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

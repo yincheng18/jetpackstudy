@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.gyf.immersionbar:immersionbar-ktx:3.0.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/8f8cdf0ec6296fefb7411e0aeb349573/jetified-immersionbar-ktx-3.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/8f8cdf0ec6296fefb7411e0aeb349573/jetified-immersionbar-ktx-3.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/8f8cdf0ec6296fefb7411e0aeb349573/jetified-immersionbar-ktx-3.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/com.gyf.immersionbar/immersionbar-ktx/3.0.0/8061053313b2956e81b91d372feb4d630a2a5f94/immersionbar-ktx-3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/com.gyf.immersionbar/immersionbar-ktx/3.0.0/ece6c59aa0bb728799fad5332dc7e80653360256/immersionbar-ktx-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

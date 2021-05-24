@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.fragment:fragment:1.3.0-alpha08@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/cafc11603b5046343b978aebba11b0fc/fragment-1.3.0-alpha08/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/cafc11603b5046343b978aebba11b0fc/fragment-1.3.0-alpha08/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/cafc11603b5046343b978aebba11b0fc/fragment-1.3.0-alpha08/res" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/cafc11603b5046343b978aebba11b0fc/fragment-1.3.0-alpha08/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/androidx.fragment/fragment/1.3.0-alpha08/61bedba418954bca3ee527b72a869ffc73b1c721/fragment-1.3.0-alpha08-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

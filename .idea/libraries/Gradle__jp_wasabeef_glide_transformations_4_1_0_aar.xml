@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: jp.wasabeef:glide-transformations:4.1.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/385225aa6d63a888fb8d9f9c5469b55f/jetified-glide-transformations-4.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/385225aa6d63a888fb8d9f9c5469b55f/jetified-glide-transformations-4.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-2/files-2.1/385225aa6d63a888fb8d9f9c5469b55f/jetified-glide-transformations-4.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/jp.wasabeef/glide-transformations/4.1.0/2591ed8b0addefbed90f432e25df2af1d64ef5d4/glide-transformations-4.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../gradleFile/.gradle/wrapper/dists/gradle-4.6-all/caches/modules-2/files-2.1/jp.wasabeef/glide-transformations/4.1.0/34aabffff7260c5fcf598f5b8b1fe19e2be3f925/glide-transformations-4.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
