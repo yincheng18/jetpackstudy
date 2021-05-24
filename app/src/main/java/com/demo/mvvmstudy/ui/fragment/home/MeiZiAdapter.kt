@@ -26,10 +26,10 @@ class MeiZiAdapter : BaseAdapter<MeiZiData>(R.layout.layout_stick_article, Array
     override fun convert(helper: CommonViewHolder, item: MeiZiData) {
         val itemListBinding = helper.getBinding<LayoutStickArticleBinding>()
         if (itemListBinding != null) {
-            itemListBinding.item = item
-            Glide.with(context).load(R.mipmap.ic_launcher) //图片地址
+//            itemListBinding.item = item
+            Glide.with(context).load(item.url) //图片地址
                 .transform(MultiTransformation(CenterCrop(), RoundedCorners(20)))
-                .into(itemListBinding.ivText);
+                .into(itemListBinding.ivText)
         }
     }
 }
