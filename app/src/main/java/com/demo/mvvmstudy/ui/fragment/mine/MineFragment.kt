@@ -48,8 +48,7 @@ class MineFragment :
 
     override fun loadPageListData(pageNo: Int, pageSize: Int) {
         val list = ArrayList<String>()
-        val size=mAdapter.data.size
-        for (index in size..size+20) {
+        for (index in 0..20) {
             list.add(index.toString())
         }
         showListData(list, pageNo)

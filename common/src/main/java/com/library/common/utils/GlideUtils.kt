@@ -4,7 +4,11 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.MultiTransformation
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
+import com.library.common.base.BaseApplication.Companion.context
 import com.library.common.config.AppConfig
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
@@ -132,17 +136,14 @@ class GlideUtils {
          */
         fun loadCustomRoundImage(
             imageView: ImageView,
-            url: String,
-            type: RoundedCornersTransformation.CornerType= RoundedCornersTransformation.CornerType.ALL,
-            radius: Int=15
+            url: String,radius: Int=20
         ) {
             val options = RequestOptions()
                 .circleCrop()
                 .placeholder(AppConfig.getPlaceholder())
                 .error(AppConfig.getErrorImage())
-                .transform(RoundedCornersTransformation(radius, 0, type))
                 .skipMemoryCache(AppConfig.isSkipMemoryCache())
-            Glide.with(imageView.context).load(url).apply(options).into(imageView)
+            Glide.with(imageView.context).load(url).apply(options).transform(MultiTransformation(CenterCrop(), RoundedCorners(radius))).into(imageView)
         }
 
     }

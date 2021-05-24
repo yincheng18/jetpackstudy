@@ -38,7 +38,7 @@ abstract class BaseActivity<VM : BaseViewModel<*>, DB : ViewDataBinding> : AppCo
     /**
      * viewModel
      */
-    protected lateinit var mViewModel: VM
+    private lateinit var mViewModel: VM
 
     /**
      * dataBinding
